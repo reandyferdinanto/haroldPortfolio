@@ -1,11 +1,13 @@
 @mixin light-theme {
-  --color-bg: #fff;
-  --color-bg-2: #e8eef1;
-  --color-text: #001a41;
+  --color-bg: #ffffff1e;
+  --color-bg-2: #faf8f1;
+  --color-text: #4c3d3d;
+  --color-cardAboutMe: #fd831f8a;
 }
 
 @mixin dark-theme {
-  --color-bg: #4f4557;
+  --color-bg: #00000042;
   --color-bg-2: #393646;
-  --color-text: #f4eee0;
+  --color-text: #fff7d4;
+  --color-cardAboutMe: rgba(229, 185, 115, 0.158);
 }
