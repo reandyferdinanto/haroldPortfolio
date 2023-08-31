@@ -7,6 +7,17 @@
   box-sizing: border-box;
   padding: 2rem;
   @include directionY;
+  background-image: url('../../../static/images/bg-stars.svg');
+  animation: moveBackground 20s linear infinite;
+
+  @keyframes moveBackground {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 100%;
+    }
+  }
 
   .S3Title {
     font-size: 2rem;
