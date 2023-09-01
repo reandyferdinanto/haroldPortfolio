@@ -7,7 +7,6 @@
   @include directionX;
   background-image: url('../../../static/images/bg-stars.svg');
   animation: moveBackground 20s linear infinite;
-
   @keyframes moveBackground {
     0% {
       background-position: 100% 0;
@@ -36,50 +35,78 @@
       border: 1px solid rgba(229, 186, 115, 0.2);
       box-sizing: border-box;
       padding: 2rem;
-
-      .CardTitle {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 3rem;
+      &.fadeIn {
+        animation: fadeInUpFromLeft 1.5s ease-out;
       }
+    }
 
-      .CardDesc1 {
-        font-size: 0.8rem;
-        font-weight: 500;
-        text-align: justify;
+    @keyframes fadeInUpFromLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
       }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 
-      .CardDesc2 {
-        font-size: 0.8rem;
-        font-weight: 500;
-        text-align: justify;
-      }
+    .CardTitle {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 3rem;
+    }
 
-      .CardDesc3 {
-        font-size: 0.8rem;
-        font-weight: 400;
-        position: absolute;
-        bottom: 1rem;
-      }
+    .CardDesc1 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-align: justify;
+    }
+
+    .CardDesc2 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-align: justify;
+    }
+
+    .CardDesc3 {
+      font-size: 0.8rem;
+      font-weight: 400;
+      position: absolute;
+      bottom: 1rem;
+    }
+  }
+}
+
+.ContainerRight {
+  width: 50%;
+  height: 80vh;
+  @include directionX;
+  align-items: center;
+  // justify-content: center;
+
+  .ProfilePic {
+    width: 22rem;
+    height: 32rem;
+    background-image: url('../../../static/images/harold-foto.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+    &.fadeIn {
+      animation: fadeInUpFromRight 1.5s ease-out;
     }
   }
 
-  .ContainerRight {
-    width: 50%;
-    height: 80vh;
-    @include directionX;
-    align-items: center;
-    // justify-content: center;
-
-    .ProfilePic {
-      width: 22rem;
-      height: 32rem;
-      background-image: url('../../../static/images/harold-foto.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-left: 5rem;
-      margin-bottom: 5rem;
-      position: relative;
+  @keyframes fadeInUpFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }
