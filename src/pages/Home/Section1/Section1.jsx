@@ -1,15 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import classes from './style.module.scss';
+import anime from 'animejs';
 
 const Section1 = ({ isVisible, updateVisibility }) => {
   const sectionRef = useRef(null);
+  const helloRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            updateVisibility(true); // Update the visibility state in the Home component
+            // Update the visibility state in the Home component
+            updateVisibility(true);
           }
         });
       },
