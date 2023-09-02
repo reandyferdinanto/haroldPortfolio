@@ -60,7 +60,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
       <div className={classes.Section3Wrapper} ref={sectionRef}>
         <div className={classes.S3Title}>EXPERIENCE</div>
         <Timeline position="alternate">
-          <TimelineItem className="timeline-right">
+          {/* <TimelineItem className="timeline-right">
             <TimelineOppositeContent
               className={classes.font}
               sx={{ m: 'auto 0', fontWeight: 800 }}
@@ -84,8 +84,8 @@ const Section3 = ({ isVisible, updateVisibility }) => {
                 3D Artist - Part Time
               </Typography>
             </TimelineContent>
-          </TimelineItem>
-          <TimelineItem className="timeline-left">
+          </TimelineItem> */}
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent
               className={classes.font}
               sx={{ m: 'auto 0', fontWeight: 800 }}
@@ -93,7 +93,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               variant="body2"
               color="text.secondary"
             >
-              2023
+              2023 - present
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
@@ -111,7 +111,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem className="timeline-right">
+          <TimelineItem className="timeline-left">
             <TimelineOppositeContent
               className={classes.font}
               sx={{ m: 'auto 0', fontWeight: 800 }}
@@ -136,7 +136,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem className="timeline-left">
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent
               className={classes.font}
               sx={{ m: 'auto 0', fontWeight: 800 }}
@@ -161,7 +161,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem className="timeline-right">
+          <TimelineItem className="timeline-left">
             <TimelineOppositeContent
               className={classes.font}
               sx={{ m: 'auto 0', fontWeight: 800 }}
@@ -186,7 +186,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem className="timeline-left">
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent
               className={classes.font}
               sx={{ m: 'auto 0', fontWeight: 800 }}

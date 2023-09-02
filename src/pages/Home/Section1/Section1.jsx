@@ -3,6 +3,7 @@ import classes from './style.module.scss';
 import anime from 'animejs';
 
 const Section1 = ({ isVisible, updateVisibility }) => {
+  const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef(null);
   const helloRef = useRef(null);
 
@@ -10,8 +11,9 @@ const Section1 = ({ isVisible, updateVisibility }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !hasAnimated) {
             updateVisibility(true);
+            setHasAnimated(true);
 
             anime({
               targets: '.ease-in',
@@ -31,7 +33,7 @@ const Section1 = ({ isVisible, updateVisibility }) => {
     return () => {
       observer.disconnect();
     };
-  }, [updateVisibility]);
+  }, [hasAnimated]);
 
   return (
     <div className={classes.Section1Wrapper} ref={sectionRef}>

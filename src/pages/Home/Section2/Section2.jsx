@@ -4,6 +4,7 @@ import anime from 'animejs';
 
 const Section2 = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef(null);
   const helloRef = useRef(null);
 
@@ -11,8 +12,9 @@ const Section2 = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !hasAnimated) {
             setIsVisible(true);
+            setHasAnimated(true);
             anime({
               targets: '.Card-About-Me',
               translateX: [-150, 0],
@@ -23,7 +25,7 @@ const Section2 = () => {
 
             anime({
               targets: '.Profile-Pic',
-              translateX: [150, 0], // Animation for .ProfPic element
+              translateX: [150, 0],
               opacity: [0, 1],
               duration: 1500,
               easing: 'easeInOutSine',
@@ -39,7 +41,7 @@ const Section2 = () => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [hasAnimated]); // Include hasAnimated in the dependency array
 
   return (
     <div>
