@@ -13,6 +13,7 @@ import HistoryEduTwoToneIcon from '@mui/icons-material/HistoryEduTwoTone';
 import SchoolTwoToneIcon from '@mui/icons-material/SchoolTwoTone';
 import { lime } from '@mui/material/colors';
 import classes from './style.module.scss';
+import anime from 'animejs';
 
 const Section3 = ({ isVisible, updateVisibility }) => {
   const sectionRef = useRef(null);
@@ -22,7 +23,25 @@ const Section3 = ({ isVisible, updateVisibility }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            updateVisibility(true); // Update the visibility state in the Home component
+            updateVisibility(true);
+
+            anime({
+              targets: '.timeline-right',
+              translateX: [250, 0],
+              opacity: [0, 1],
+              duration: 1500,
+              easing: 'easeInOutSine',
+              delay: anime.stagger(100),
+            });
+
+            anime({
+              targets: '.timeline-left',
+              translateX: [-250, 0],
+              opacity: [0, 1],
+              duration: 1500,
+              easing: 'easeInOutSine',
+              delay: anime.stagger(100),
+            });
           }
         });
       },
@@ -41,7 +60,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
       <div className={classes.Section3Wrapper} ref={sectionRef}>
         <div className={classes.S3Title}>EXPERIENCE</div>
         <Timeline position="alternate">
-          <TimelineItem>
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
               2023 - present
             </TimelineOppositeContent>
@@ -59,7 +78,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <Typography>3D Artist - Part Time</Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem className="timeline-left">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} align="right" variant="body2" color="text.secondary">
               2023
             </TimelineOppositeContent>
@@ -77,7 +96,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <Typography>3D Artist - Internship</Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
               2022
             </TimelineOppositeContent>
@@ -95,7 +114,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <Typography>Deputi Coordinator Plaza Desain Emotia</Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem className="timeline-left">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
               2021 - 2022
             </TimelineOppositeContent>
@@ -113,7 +132,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <Typography>Regional Head UKM "Bersama Dalam Musik" - Kemanggisan</Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
               2021
             </TimelineOppositeContent>
@@ -131,7 +150,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <Typography>Head Documentation Plaza Desain Fantasme</Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem className="timeline-left">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
               2019
             </TimelineOppositeContent>
@@ -150,7 +169,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
             </TimelineContent>
           </TimelineItem>
           <div className={classes.S3Title2}>EDUCATION</div>
-          <TimelineItem>
+          <TimelineItem className="timeline-right">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} align="right" variant="body2" color="text.secondary">
               2020 - present
             </TimelineOppositeContent>
@@ -168,7 +187,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <Typography>Visual Communication Design, New Media</Typography>
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem className="timeline-left">
             <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
               2017 - 2020
             </TimelineOppositeContent>

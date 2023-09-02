@@ -1,0 +1,26 @@
+@mixin telegraf-200 {
+  @font-face {
+    font-family: Telegraf;
+    font-style: normal;
+    font-weight: 200;
+    src: url('/src/static/fonts/telegraf/Telegraf\ UltraLight\ 200.otf') format('truetype');
+  }
+}
+
+@mixin telegraf-400 {
+  @font-face {
+    font-family: Telegraf;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/src/static/fonts/telegraf/Telegraf\ Regular\ 400.otf') format('truetype');
+  }
+}
+
+@mixin telegraf-800 {
+  @font-face {
+    font-family: 'Telegraf';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/src/static/fonts/telegraf/Telegraf\ UltraBold\ 800.otf') format('truetype');
+  }
+}
