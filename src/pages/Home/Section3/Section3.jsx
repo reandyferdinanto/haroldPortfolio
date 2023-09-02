@@ -61,7 +61,12 @@ const Section3 = ({ isVisible, updateVisibility }) => {
         <div className={classes.S3Title}>EXPERIENCE</div>
         <Timeline position="alternate">
           <TimelineItem className="timeline-right">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              variant="body2"
+              color="text.secondary"
+            >
               2023 - present
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -72,14 +77,22 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Festivo - PT. Semesta Realitas Indonesia
               </Typography>
-              <Typography>3D Artist - Part Time</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                3D Artist - Part Time
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem className="timeline-left">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} align="right" variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              align="right"
+              variant="body2"
+              color="text.secondary"
+            >
               2023
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -90,14 +103,21 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '0.5rem', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Festivo - PT. Semesta Realitas Indonesia
               </Typography>
-              <Typography>3D Artist - Internship</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                3D Artist - Internship
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem className="timeline-right">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              variant="body2"
+              color="text.secondary"
+            >
               2022
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -108,14 +128,21 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Student Activity Unit
               </Typography>
-              <Typography>Deputi Coordinator Plaza Desain Emotia</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                Deputi Coordinator Plaza Desain Emotia
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem className="timeline-left">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              variant="body2"
+              color="text.secondary"
+            >
               2021 - 2022
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -126,14 +153,21 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Student Activity Unit
               </Typography>
-              <Typography>Regional Head UKM "Bersama Dalam Musik" - Kemanggisan</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                Regional Head UKM "Bersama Dalam Musik" - Kemanggisan
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem className="timeline-right">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              variant="body2"
+              color="text.secondary"
+            >
               2021
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -144,14 +178,21 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Student Association
               </Typography>
-              <Typography>Head Documentation Plaza Desain Fantasme</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                Head Documentation Plaza Desain Fantasme
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem className="timeline-left">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              variant="body2"
+              color="text.secondary"
+            >
               2019
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -162,15 +203,23 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Student Association
               </Typography>
-              <Typography>Head Documentation on Cravier</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                Head Documentation on Cravier
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <div className={classes.S3Title2}>EDUCATION</div>
           <TimelineItem className="timeline-right">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} align="right" variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              align="right"
+              variant="body2"
+              color="text.secondary"
+            >
               2020 - present
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -181,14 +230,21 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '1rem', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 Binus University
               </Typography>
-              <Typography>Visual Communication Design, New Media</Typography>
+              <Typography className={classes.font} sx={{ fontSize: '1rem', fontWeight: 400 }}>
+                Visual Communication Design, New Media
+              </Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem className="timeline-left">
-            <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2" color="text.secondary">
+            <TimelineOppositeContent
+              className={classes.font}
+              sx={{ m: 'auto 0', fontWeight: 800 }}
+              variant="body2"
+              color="text.secondary"
+            >
               2017 - 2020
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -199,7 +255,7 @@ const Section3 = ({ isVisible, updateVisibility }) => {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
+              <Typography className={classes.font} sx={{ fontSize: '1.2rem', fontWeight: 800 }} component="span">
                 SMA Labschool Cibubur
               </Typography>
             </TimelineContent>
