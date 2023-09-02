@@ -41,7 +41,7 @@ const Section2 = () => {
     return () => {
       observer.disconnect();
     };
-  }, [hasAnimated]); // Include hasAnimated in the dependency array
+  }, [hasAnimated]);
 
   return (
     <div>

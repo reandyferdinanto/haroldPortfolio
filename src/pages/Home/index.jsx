@@ -3,6 +3,7 @@ import classes from './style.module.scss';
 import Section1 from './Section1/Section1.jsx';
 import Section2 from './Section2/Section2';
 import Section3 from './Section3/Section3';
+import Section4 from './Section4/Section4';
 
 const Home = () => {
   const [section1Visible, setSection1Visible] = useState(false);
@@ -14,6 +15,7 @@ const Home = () => {
       <Section1 isVisible={section1Visible} updateVisibility={setSection1Visible} />
       <Section2 isVisible={section2Visible} updateVisibility={setSection2Visible} />
       <Section3 isVisible={section3Visible} updateVisibility={setSection3Visible} />
+      <Section4 />
     </div>
   );
 };
